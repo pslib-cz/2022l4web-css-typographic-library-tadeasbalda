@@ -19,6 +19,7 @@ button {
 .button--correct {
     background-color: rgb(48, 177, 48);
     color: white;
+    
 }
 .button--wrong {
     background-color:rgb(197, 12, 12);
@@ -29,14 +30,21 @@ button {
     color: white;
 }
 .button--correct:hover {
-    background-color: rgb(0, 182, 0);
+    background-color: rgb(2, 129, 2);
     color: white;
+    scale: 1.05;  
+    font-size: small;
+    
 }
 .button--wrong:hover {
     background-color:rgb(255, 24, 24);
-    color: white
+    color: white;
+    scale: 1.05;    
+
 }   
 .button--normal:hover {
     background-color: rgb(21, 152, 228);
     color: white;
+    scale: 1.05;  
+    
 }
