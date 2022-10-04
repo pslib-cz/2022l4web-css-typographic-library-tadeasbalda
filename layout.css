@@ -1,6 +1,42 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: 'Oswald', sans-serif;
+}
+
+button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    height: 36px;
+    line-height: 34px;
+    padding: 0 18px;
+    font-weight: 400;
+}
+.button--correct {
+    background-color: rgb(48, 177, 48);
+    color: white;
+}
+.button--wrong {
+    background-color:rgb(197, 12, 12);
+    color: white
+}   
+.button--normal {
+    background-color: rgb(0, 132, 209);
+    color: white;
+}
+.button--correct:hover {
+    background-color: rgb(0, 182, 0);
+    color: white;
+}
+.button--wrong:hover {
+    background-color:rgb(255, 24, 24);
+    color: white
+}   
+.button--normal:hover {
+    background-color: rgb(21, 152, 228);
+    color: white;
 }
