@@ -1,7 +1,7 @@
 # Typography CSS library
-**Author:** *First Lastname*
+**Author:** *Tadeáš Balda*
 ## Demo site
-Link to **[demo](http://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda)** site for preview.
+Link to **[demo](./index.html)** site for preview.
 ## Dependecies
 ...
 ## Implementation
