@@ -33,7 +33,6 @@ button {
     background-color: rgb(2, 129, 2);
     color: white;
     scale: 1.05;  
-    font-size: small;
     
 }
 .button--wrong:hover {
