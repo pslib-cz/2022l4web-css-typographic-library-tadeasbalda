@@ -91,6 +91,7 @@ body {
 .alert {
     padding: 20px;
     border-radius: 5px;
+    color: white;
 }
 .alert--save {
     background-color: rgb(228, 225, 77);
@@ -100,4 +101,25 @@ body {
 }
 .alert--critical {
     background-color: rgb(214, 32, 32);
+}
+/* Colors */
+.color {
+    content: "";
+    height: 2rem;
+    width: 2rem;
+}
+.color--1 {
+    background-color: aqua;
+}
+.color--2 {
+    background-color: aquamarine;
+}
+.color--3 {
+    background-color: beige;
+}
+.color--4 {
+    background-color: blueviolet;
+}
+.color--5 {
+    background-color: crimson;
 }
