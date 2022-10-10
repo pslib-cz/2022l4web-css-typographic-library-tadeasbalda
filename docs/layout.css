@@ -16,110 +16,135 @@ button {
     padding: 0 18px;
     font-weight: 400;
 }
+
 .button--correct {
     background-color: rgb(48, 177, 48);
     color: white;
-    
+
 }
+
 .button--wrong {
-    background-color:rgb(197, 12, 12);
+    background-color: rgb(197, 12, 12);
     color: white
-}   
+}
+
 .button--normal {
     background-color: rgb(0, 132, 209);
     color: white;
 }
+
 .button--correct:hover {
     background-color: rgb(2, 129, 2);
     color: white;
-    scale: 1.05;  
-    
-}
-.button--wrong:hover {
-    background-color:rgb(255, 24, 24);
-    color: white;
-    scale: 1.05;    
+    scale: 1.05;
 
-}   
+}
+
+.button--wrong:hover {
+    background-color: rgb(255, 24, 24);
+    color: white;
+    scale: 1.05;
+
+}
+
 .button--normal:hover {
     background-color: rgb(21, 152, 228);
     color: white;
-    scale: 1.05;  
-    
+    scale: 1.05;
+
 }
+
 .flexgallery {
     display: flex;
     flex-wrap: wrap;
 }
+
 .flexgallery img {
     width: 100%;
     position: relative;
 }
+
 .flexgallery figcaption {
-    
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(57, 57, 57, 0.502);
-  top: 0;
-  left: 0;
-  transform: scale(0);
-  transition: all 0.2s 0.1s ease-in-out;
-  color: #fff;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
 .flexgallery figcaption:hover {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
+
 /* Alerts */
 .alert {
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
 }
+
 .alert--save {
     background-color: rgb(228, 225, 77);
 }
+
 .alert--sign {
     background-color: rgb(32, 141, 230);
 }
+
 .alert--critical {
     background-color: rgb(214, 32, 32);
 }
+
 /* Colors */
+.color__palette {
+    display: flex;
+    flex-direction: row;
+}
+
 .color {
     content: "";
-    height: 2rem;
-    width: 2rem;
+    height: 12rem;
+    width: 12rem;
 }
+
 .color--1 {
     background-color: aqua;
 }
+
 .color--2 {
     background-color: aquamarine;
 }
+
 .color--3 {
     background-color: beige;
 }
+
 .color--4 {
     background-color: blueviolet;
 }
+
 .color--5 {
     background-color: crimson;
 }
