@@ -87,7 +87,17 @@ body {
   background-color: black;
   color: white;
 }
+/* Alerts */
 .alert {
     padding: 20px;
     border-radius: 5px;
+}
+.alert--save {
+    background-color: rgb(228, 225, 77);
+}
+.alert--sign {
+    background-color: rgb(32, 141, 230);
+}
+.alert--critical {
+    background-color: rgb(214, 32, 32);
 }
