@@ -87,3 +87,7 @@ body {
   background-color: black;
   color: white;
 }
+.alert {
+    padding: 20px;
+    border-radius: 5px;
+}

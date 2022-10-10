@@ -5,7 +5,9 @@ Link to **[demo](./index.html)** site for preview.
 ## Dependecies
 ...
 ## Implementation
-Download all files from the GitHub. Unzip and 
+1) Download all files from the GitHub.
+2) Unzip 
+3) Connect all the files to your project
 ## Usage
 ...
 ## Components
