@@ -148,3 +148,6 @@ body {
 .color--5 {
     background-color: crimson;
 }
+.table__example {
+    background-color: aqua;
+}
