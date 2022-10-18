@@ -54,7 +54,7 @@ h2 {
   }
   
   .button--darkmode {
-    background-color: #ccc;
+    background-color: rgb(0, 0, 0);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -71,12 +71,12 @@ h2 {
     height: 26px;
     left: 4px;
     position: absolute;
-    transition: .4s;
+    transition: 0.6s;
     width: 26px;
   }
   
   input:checked + .button--darkmode {
-    background-color: #66bb6a;
+    background-color: #ffe137;
   }
   
   input:checked + .button--darkmode:before {
@@ -91,6 +91,26 @@ h2 {
     border-radius: 50%;
   }
   
+/* H1 with background image */
+.image__background {
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    align-items: center;
+    justify-content: center;
+
+}
+.background__text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+
+}
 /* button */
 button {
     display: inline-block;
