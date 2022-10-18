@@ -6,6 +6,13 @@ h1,
 h2 {
     font-family: 'Oswald', sans-serif;
 }
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 /* button */
 button {
     display: inline-block;
