@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./typography.css">
     <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="">
-
 <body>
     <header>
         <nav class="navbar">
@@ -28,13 +26,20 @@
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
+        <div class="dark__mode">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="button--darkmode round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
+        </div>
+        
 
         <h1>
             My first library
         </h1>
     </header>
     <main>
-        <button onclick="myFunction()">Toggle dark mode</button>
         <section id="buttons">
             <h2>Buttons</h2>
             <div class="basic">
@@ -200,10 +205,28 @@
 
     </footer>
     <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
+   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
 
 </body>

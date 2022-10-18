@@ -1,10 +1,29 @@
+/* Basic colors */
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: rgb(255, 255, 255);
+    --heading-color: #292922;
+}
+/* Dark mode ON */
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;   
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--bg-color);
 }
 
 h1,
 h2 {
     font-family: 'Oswald', sans-serif;
+    color: var(--bg-color);
 }
 /* Navbar */
 .navbar {
@@ -13,7 +32,65 @@ h2 {
     justify-content: space-between;
 
 }
-
+/* Dark mode switch */
+.dark__mode {
+    display: flex;
+    align-items: center;
+  
+    em {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+  }
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .button--darkmode {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .button--darkmode:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .button--darkmode {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .button--darkmode:before {
+    transform: translateX(26px);
+  }
+  
+  .button--darkmode.round {
+    border-radius: 34px;
+  }
+  
+  .button--darkmode.round:before {
+    border-radius: 50%;
+  }
+  
 /* button */
 button {
     display: inline-block;
@@ -102,10 +179,6 @@ body {
     font-size: 25px;
 }
 /* Dark Mode */
-.dark-mode {
-    background-color: black;
-    color: white;
-}
 
 /* Alerts */
 .alert {
