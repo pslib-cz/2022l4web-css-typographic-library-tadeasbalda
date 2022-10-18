@@ -6,6 +6,7 @@ h1,
 h2 {
     font-family: 'Oswald', sans-serif;
 }
+
 /* button */
 button {
     display: inline-block;
@@ -53,6 +54,7 @@ button {
     scale: 1.05;
 
 }
+
 /* Gallery */
 .flexgallery {
     display: flex;
@@ -148,6 +150,29 @@ body {
 .color--5 {
     background-color: crimson;
 }
+
 .table__example {
     background-color: aqua;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 1000;
+    padding-bottom: 1rem;
+    list-style: none;
+
+}
+
+.navbar__menu a:hover {
+    color: aqua;
+
+
+}
+
+.navbar__menu a {
+    text-decoration: none;
 }
