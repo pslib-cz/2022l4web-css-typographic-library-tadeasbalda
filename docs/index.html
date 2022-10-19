@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./typography.css">
     <link rel="stylesheet" href="./normalize.css">
+
 <body>
     <header>
         <nav class="navbar">
@@ -30,17 +31,17 @@
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="button--darkmode round"></div>
-          </label>
-          <em>Enable Dark Mode!</em>
+            </label>
+            <em>Enable Dark Mode!</em>
         </div>
-        
+
 
         <div class="image__background">
             <div class="background__text">
-             <h1>The first <span>Using</span> Flex</h1>
-             <p>This is the school project, so it is for free</p>
-         </div>
-         </div>
+                <h1>The first <span>Using</span> Flex</h1>
+                <p>This is the school project, so it is for free</p>
+            </div>
+        </div>
     </header>
     <main>
         <section id="buttons">
@@ -105,42 +106,70 @@
             <h2>Images</h2>
             <h3>Single image</h3>
             <h3>Gallery</h3>
-            <div class="flexgallery">
-                <figure><a href=""><img src="./IMG/Group -1.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -2.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -3.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure> <a href=""><img src="./IMG/Group -4.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -5.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""></a><img src="./IMG/Group -6.png" alt="">
-                    <figcaption>Image Title</figcaption></a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -7.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -8.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group 1.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
+            <div class="container">
+                <!-- heading text -->
+                <ul class="image-gallery">
+                    <li>
+                        <img src="https://source.unsplash.com/VWcPlbHglYc/640x416" alt="" />
+                        <div class="overlay"><span>Image title</span></div>
+                    </li>
+                    <!-- other items here -->
+
+                    
+                        <li>
+                            <img src="./IMG/Group -1.png" alt="">
+                                    <figcaption class="overlay" ><span>Image Title</span></figcaption>
+                                </a>
+                            
+                        </li>
+                        <li>
+                            <img src="./IMG/Group -2.png" alt="">
+                                    <figcaption class="overlay"><span>Image Title</span></figcaption>
+                                </a>
+                           
+                        </li>
+                        <li>
+                            <img src="./IMG/Group -3.png" alt="">
+                                    <figcaption class="overlay"><span>Image Title</span></figcaption>
+                                </a>
+                           
+                        </li>
+                        <li>
+                            <img src="./IMG/Group -4.png" alt="">
+                                    <figcaption class="overlay"><span>Image Title</span></figcaption>
+                                </a>
+                           
+                        </li>
+                        <li>
+                            <img src="./IMG/Group -5.png" alt="">
+                                    <figcaption class="overlay"><span>Image Title</span></figcaption>
+                                </a>
+                           
+                        </li>
+                        <li>
+                            </a><img src="./IMG/Group -6.png" alt="">
+                                <div class="overlay"><span>Image Title</span></div>
+                            
+                        </li>
+                        <li>
+                            <img src="./IMG/Group -7.png" alt="">
+                                    <div class="overlay"><span>Image Title</span></div>
+                                </a>
+                            
+                        </li>
+                        <li>
+                            <img src="./IMG/Group -8.png" alt="">
+                                    <div class="overlay"><span>Image Title</span></div>
+                                </a>
+                            
+                        </li>
+                        <li>
+                            <img src="./IMG/Group 1.png" alt="">
+                                    <div  class="overlay"><span>Image Title</span></div>
+                                </a>
+                            
+                        </li>
+                </ul>
             </div>
 
         </section>
@@ -208,28 +237,29 @@
 
     </footer>
     <script>
-   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
 
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-}
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
-    }    
-}
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
 
 </body>
