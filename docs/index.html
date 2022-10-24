@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar">
             <div class="navbar__title"><a href="#"></a></div>
-            <ul class="navbar__menu">
+            <ul class="navbar__menu" id="myTopnav">
                 <li class="menu__item"><a href="#headings" class="navbar__btn">Headings</a></li>
                 <li class="menu__item"><a href="#text" class="navbar__btn">Text</a></li>
                 <li class="menu__item"><a href="#list" class="navbar__btn">Lists</a></li>
@@ -22,6 +22,9 @@
                 <li class="menu__item"><a href="#buttons" class="navbar__btn">Buttons</a></li>
                 <li class="menu__item"><a href="#buttons" class="navbar__btn">Gallery</a></li>
                 <li class="menu__item"><a href="#code" class="navbar__btn">Code</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -253,6 +256,14 @@
         }
 
         toggleSwitch.addEventListener('change', switchTheme, false);
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar__menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar__menu";
+            }
+        }
     </script>
 
 </body>
