@@ -32,7 +32,10 @@ h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--bg-color);
 }
-
+/* titles */ 
+section h2 {
+    text-align: center;
+}
 /* Navbar */
 .navbar {
     display: flex;
@@ -135,9 +138,9 @@ button {
 
 .button__basic {
     display: flex;
-    gap: 10px;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .button {
@@ -281,6 +284,15 @@ body {
 /* Dark Mode */
 
 /* Alerts */
+.alert__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.alert__list .alert {
+    flex-grow: 2;
+}
 .alert {
     padding: 20px;
     border-radius: 10px;
@@ -303,6 +315,10 @@ body {
 .color__palette {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+   align-content: space-around;
 }
 
 .color {
