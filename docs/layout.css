@@ -1,3 +1,8 @@
+/* Layers */
+
+
+
+
 /* Basic colors */
 :root {
     --primary-color: #302AE6;
@@ -6,13 +11,14 @@
     --bg-color: rgb(255, 255, 255);
     --heading-color: #292922;
 }
+
 /* Dark mode ON */
 [data-theme="dark"] {
     --primary-color: #9A97F3;
-    --secondary-color: #818cab; 
+    --secondary-color: #818cab;
     --font-color: #e1e1ff;
     --bg-color: #161625;
-    --heading-color: #818cab;   
+    --heading-color: #818cab;
 }
 
 body {
@@ -26,6 +32,7 @@ h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--bg-color);
 }
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -33,28 +40,30 @@ h2 {
     justify-content: space-between;
 
 }
+
 /* Dark mode switch */
 .dark__mode {
     display: flex;
     align-items: center;
 }
-    em {
-      margin-left: 10px;
-      font-size: 1rem;
-    }
-  
-  .theme-switch {
+
+em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch {
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
-  }
-  
-  .theme-switch input {
-    display:none;
-  }
-  
-  .button--darkmode {
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.button--darkmode {
     background-color: rgb(0, 0, 0);
     bottom: 0;
     cursor: pointer;
@@ -63,9 +72,9 @@ h2 {
     right: 0;
     top: 0;
     transition: .4s;
-  }
-  
-  .button--darkmode:before {
+}
+
+.button--darkmode:before {
     background-color: #fff;
     bottom: 4px;
     content: "";
@@ -74,43 +83,45 @@ h2 {
     position: absolute;
     transition: 0.6s;
     width: 26px;
-  }
-  
-  input:checked + .button--darkmode {
+}
+
+input:checked+.button--darkmode {
     background-color: #ffe137;
-  }
-  
-  input:checked + .button--darkmode:before {
+}
+
+input:checked+.button--darkmode:before {
     transform: translateX(26px);
-  }
-  
-  .button--darkmode.round {
+}
+
+.button--darkmode.round {
     border-radius: 34px;
-  }
-  
-  .button--darkmode.round:before {
+}
+
+.button--darkmode.round:before {
     border-radius: 50%;
-  }
-  
+}
+
 /* H1 with background image */
 .image__background {
     display: flex;
     flex-direction: column;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
     align-items: center;
     justify-content: center;
 
 }
+
 .background__text {
     font-size: 1.4rem;
     text-align: center;
     color: white;
 
 }
+
 /* button */
 button {
     display: inline-block;
@@ -179,7 +190,7 @@ button {
     top: 0;
     left: 0;
     transform: scale(0);
-    transition: all 0.2s 0.1s ease-in-out;
+    transition: all 0.1s 0.05s ease-in-out;
     color: #fff;
     border-radius: 5px;
     display: flex;
@@ -198,53 +209,61 @@ body {
     color: black;
     font-size: 25px;
 }
+
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.image-gallery > li {
-  flex-basis: 350px; /* width: 350px; */
+.image-gallery>li {
+    flex-basis: 90%;
+    /* width: 350px; */
+    list-style: none;
 }
 
 .image-gallery li img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
 }
+
 .image-gallery::after {
-  content: "";
-  flex-basis: 350px;
+    content: "";
+    flex-basis: 350px;
 }
-.image-gallery > li {
-  /* ... */
-  position: relative;
-  cursor: pointer;
+
+.image-gallery>li {
+    /* ... */
+    position: relative;
+    cursor: pointer;
 }
+
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(57, 57, 57, 0.502);
-  top: 0;
-  left: 0;
-  transform: scale(0);
-  transition: all 0.2s 0.1s ease-in-out;
-  color: #fff;
-  border-radius: 5px;
-  /* center overlay text */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.1s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 /* hover */
 .image-gallery li:hover .overlay {
-  transform: scale(1);
+    transform: scale(1);
 }
+
 /* Dark Mode */
 
 /* Alerts */
