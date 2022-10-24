@@ -133,40 +133,54 @@ button {
     font-weight: 400;
 }
 
+.button__basic {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    margin: 10px;
+    color: white;
+}
+
 .button--correct {
     background-color: rgb(48, 177, 48);
-    color: white;
+
 
 }
 
 .button--wrong {
     background-color: rgb(197, 12, 12);
-    color: white
+
 }
 
 .button--normal {
     background-color: rgb(0, 132, 209);
-    color: white;
+
+}
+.button:hover {
+    scale: 1.05;
 }
 
 .button--correct:hover {
     background-color: rgb(2, 129, 2);
-    color: white;
-    scale: 1.05;
+    
+    
 
 }
 
 .button--wrong:hover {
     background-color: rgb(255, 24, 24);
-    color: white;
-    scale: 1.05;
+    
+  
 
 }
 
 .button--normal:hover {
     background-color: rgb(21, 152, 228);
-    color: white;
-    scale: 1.05;
+   
 
 }
 
@@ -217,7 +231,7 @@ body {
     gap: 10px;
 }
 
-.image-gallery>li {
+.image-gallery li {
     flex-basis: 90%;
     /* width: 350px; */
     list-style: none;
@@ -236,7 +250,7 @@ body {
     flex-basis: 350px;
 }
 
-.image-gallery>li {
+.image-gallery li {
     /* ... */
     position: relative;
     cursor: pointer;
