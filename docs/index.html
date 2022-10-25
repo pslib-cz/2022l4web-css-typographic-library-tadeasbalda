@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./typography.css">
     <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./mobile.css">
 
 <body>
     <header>
-
-        <div class="navbar__title"><a href="#"></a></div>
-        <div class="container">
-
+        <div class="menu__container">
             <nav class="menu">
                 <a href="#" class="nav-branding">Home</a>
-                <ul class="navbar__menu" id="myTopnav">
+                <ul class="navbar__menu" >
                     <li class="menu__item"><a href="#headings" class="navbar__btn">Headings</a></li>
                     <li class="menu__item"><a href="#text" class="navbar__btn">Text</a></li>
                     <li class="menu__item"><a href="#list" class="navbar__btn">Lists</a></li>
@@ -31,7 +29,7 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                 </div>
+                </div>
             </nav>
         </div>
         <div class="menu-btn">
@@ -265,7 +263,18 @@
         }
 
         toggleSwitch.addEventListener('change', switchTheme, false);
-      // Hamburger menu:
+        // Hamburger menu:
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navbar__menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".menu__item").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
     </script>
 
 </body>
