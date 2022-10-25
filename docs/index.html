@@ -15,7 +15,7 @@
         <div class="menu__container">
             <nav class="menu">
                 <a href="#" class="nav-branding">Home</a>
-                <ul class="navbar__menu" >
+                <ul class="navbar__menu">
                     <li class="menu__item"><a href="#headings" class="navbar__btn">Headings</a></li>
                     <li class="menu__item"><a href="#text" class="navbar__btn">Text</a></li>
                     <li class="menu__item"><a href="#list" class="navbar__btn">Lists</a></li>
@@ -36,12 +36,12 @@
             <i class="fas fa-bars"></i>
         </div>
 
-        <div class="dark__mode">
-            <label class="theme-switch" for="checkbox">
+        <div class="darkmode">
+            <label class="darkmode__switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="button--darkmode round"></div>
             </label>
-            <em>Enable Dark Mode!</em>
+            <em class="darkmode__text">Enable Dark Mode!</em>
         </div>
 
 
@@ -240,7 +240,7 @@
     </footer>
     <script>
         // Darkmode switch:
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const toggleSwitch = document.querySelector('.darkmode__switch input[type="checkbox"]');
         const currentTheme = localStorage.getItem('theme');
 
         if (currentTheme) {
