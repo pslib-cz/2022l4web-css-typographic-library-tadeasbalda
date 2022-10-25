@@ -1,7 +1,7 @@
 # Typography CSS library
 **Author:** *Tadeáš Balda*
 ## Demo site
-Link to **[demo](./index.html)** site for preview.
+Link to **[demo](./docs/index.html)** site for preview.
 ## Dependecies
 ...
 ## Implementation
