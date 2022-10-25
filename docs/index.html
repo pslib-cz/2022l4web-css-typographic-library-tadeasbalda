@@ -14,7 +14,7 @@
     <header>
         <div class="menu__container">
             <nav class="menu">
-                <a href="#" class="nav-branding">Home</a>
+                <a href="#" class="nav-branding"></a>
                 <ul class="navbar__menu">
                     <li class="menu__item"><a href="#headings" class="navbar__btn">Headings</a></li>
                     <li class="menu__item"><a href="#text" class="navbar__btn">Text</a></li>
@@ -24,7 +24,17 @@
                     <li class="menu__item"><a href="#buttons" class="navbar__btn">Buttons</a></li>
                     <li class="menu__item"><a href="#buttons" class="navbar__btn">Gallery</a></li>
                     <li class="menu__item"><a href="#code" class="navbar__btn">Code</a></li>
+                    <li class="darkmode menu__item">
+                        <label class="darkmode__switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="button--darkmode round"></div>
+                        </label>
+                        <em class="darkmode__text">Enable Dark Mode!</em>
+                    </li >
                 </ul>
+
+                
+
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -36,19 +46,14 @@
             <i class="fas fa-bars"></i>
         </div>
 
-        <div class="darkmode">
-            <label class="darkmode__switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="button--darkmode round"></div>
-            </label>
-            <em class="darkmode__text">Enable Dark Mode!</em>
-        </div>
-
 
         <div class="image__background">
             <div class="background__text">
                 <h1>The first <span>Using</span> Flex</h1>
                 <p>This is the school project, so it is for free</p>
+            </div>
+            <div class="showmore">
+                <p>Show more</p>
             </div>
         </div>
     </header>

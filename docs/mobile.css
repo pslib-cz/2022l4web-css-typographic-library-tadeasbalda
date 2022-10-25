@@ -23,8 +23,13 @@
         flex-direction: column;
         background-color: #262626;
         width: 100%;
-        text-align: center;
+        align-items: flex-start;
+        
         transition: 0.3s;
+    }
+    .navbar__menu li {
+       padding-left: 2rem;
+    
     }
 
     .menu__item {
@@ -33,5 +38,9 @@
 
     .navbar__menu.active {
         left: 0;
+    }
+    /* Darmode */
+    .darkmode__text {
+        display: none;
     }
 }
