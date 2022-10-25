@@ -45,6 +45,9 @@ h2 {
     background-color: white;
     color: black;
 }
+.showmore p {
+    margin: 0;
+}
 
 /* titles */
 section h2 {
@@ -52,12 +55,10 @@ section h2 {
 }
 
 /* Navbar */
-* {
+.menu__container {
     padding: 0;
     margin: 0;
 }
-
-
 
 .navbar__menu li {
     list-style: none;
@@ -80,7 +81,7 @@ section h2 {
     align-items: center;
 }
 
-.nav-branding {
+.nav__logo {
 
     margin: 2rem;
 }
@@ -103,7 +104,7 @@ section h2 {
 .hamburger {
     display: none;
     cursor: pointer;
-    margin: 2rem;
+    margin-inline: 2rem;
 }
 
 .bar {
@@ -126,12 +127,17 @@ section h2 {
 }
 
 .navbar__menu a:hover {
-    color: aqua;
-
-
+    color: yellow;
+}
+.navbar__menu a:hover::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    color: #ffe137;
 }
 
-.nav-branding::before {
+
+.nav__logo::before {
     content: url(./IMG/Home-icon.svg);
     padding: 2rem;
 }
