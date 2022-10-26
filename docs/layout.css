@@ -146,13 +146,16 @@ section h2 {
 .darkmode {
     display: flex;
     align-items: center;
-  
-    em {
-      margin-left: 10px;
-      font-size: 1rem;
-    }
-  }
-  .theme-switch {
+    margin: 2rem;
+}
+
+.darkmode__text {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.darkmode__switch {
     display: inline-block;
     height: 34px;
     position: relative;
