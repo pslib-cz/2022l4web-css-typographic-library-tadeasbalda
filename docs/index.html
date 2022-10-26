@@ -9,15 +9,8 @@
     <link rel="stylesheet" href="./typography.css">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./mobile.css">
-    <script src="./main.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <style>
-        @layer two,one;
-
-        @import url("./normalize.css") layer(two);
-        @import url("./layout.css") layer(one);
-    </style>
 
 <body>
     <header>
@@ -55,7 +48,7 @@
 
         <div class="image__background">
             <div class="background__text">
-                <h1>The <span>Gradient</span> typography library</h1>
+                <h1>The  <span>Gradient</span> <br>typography library</h1>
                 <p>This library was designed as a school project. It offers a responsive design, thus offering a wide
                     range of uses.</p>
             </div>
@@ -152,197 +145,82 @@
         </section>
         <section id="images">
             <h2>Images</h2>
-            <h3>Single image</h3>
             <h3>Gallery</h3>
-            <div class="container">
-                <ul class="image-gallery">
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group -1.png" alt="">
-                            <figcaption class="overlay">Image title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group -2.png" alt="">
-                            <figcaption class="overlay">Image title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group -3.png" alt="">
-                            <figcaption class="overlay">Image title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group -4.png" alt="">
-                            <figcaption class="overlay">Image Title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="./IMG/Group -5.png" alt="">
+            <ul class="image-gallery">
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group -1.png" alt="">
+                        <figcaption class="overlay">Image title</figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group -2.png" alt="">
+                        <figcaption class="overlay">Image title</figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group -3.png" alt="">
+                        <figcaption class="overlay">Image title</figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group -4.png" alt="">
                         <figcaption class="overlay">Image Title</figcaption>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group -6.png" alt="">
-                            <figcaption class="overlay">Image Title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./IMG/Group -7.png">
-                            <img src="./IMG/Group -7.png" alt="">
-                            <figcaption class="overlay">Image Title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group -8.png" alt="">
-                            <figcaption class="overlay">Image Title</figcaption>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./IMG/Group 1.png" alt="">
-                            <figcaption class="overlay">Image Title</figcaption>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+                <li>
+                    <img src="./IMG/Group -5.png" alt="">
+                    <figcaption class="overlay">Image Title</figcaption>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group -6.png" alt="">
+                        <figcaption class="overlay">Image Title</figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="./IMG/Group -7.png">
+                        <img src="./IMG/Group -7.png" alt="">
+                        <figcaption class="overlay">Image Title</figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group -8.png" alt="">
+                        <figcaption class="overlay">Image Title</figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./IMG/Group 1.png" alt="">
+                        <figcaption class="overlay">Image Title</figcaption>
+                    </a>
+                </li>
+            </ul>
         </section>
         <section id="table">
             <h2>Table</h2>
             <table>
-                <colgroup>
-                    <col span="2" class="years">
-                    <col class="cr_head">
-                    <col class="sr_head">
-                    <col class="notes">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>Od
-
-                        </th>
-                        <th>
-                            do
-                        </th>
-                        <th>
-                            Česko
-                        </th>
-                        <th>
-                            Slovensko
-                        </th>
-                        <th>
-                            Poznámka
-                        </th>
-                    </tr>
-
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th colspan="2">Počet</th>
-                        <td>2+3</td>
-                        <td>2+5</td>
-                        <td></td>
-                    </tr>
-
-                </tfoot>
-                <tbody class="komunismus">
-                    <tr>
-                        <th>1975</th>
-                        <th>1989</th>
-                        <td colspan="2">Gustav Husák</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <tbody class="csr">
-                    <tr>
-                        <th>
-                            1989
-                        </th>
-                        <th>
-                            1990
-                        </th>
-                        <td rowspan="2" colspan="2">
-                            Václav Havel
-                        </td>
-
-                        <td>
-                            Zvolen federálním schromážděním (s převahou poslanců KSČ)
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>1990</th>
-                        <th>1992</th>
-                        <td>31.12. 1992 zaniká Česko-Slovenská Federativní Republika</td>
-                    </tr>
-                </tbody>
-
-
-
-                <tbody>
-                    <tr class="cr">
-                        <th>1993</th>
-                        <th>1998</th>
-                        <td rowspan="3">Václav Havel</td>
-                        <td>
-                            Michael Kováč
-                        </td>
-                        <td></td>
-                    <tr class="cr">
-                        <th>1998</th>
-                        <th>1999</th>
-                        <td>bez prezidenta</td>
-                        <td>Na Slovensku v této době byli pověřeni prezidentskými pravomocemi tehdejší premiéři</td>
-                    </tr>
-                    <tr class="cr">
-                        <th>1999</th>
-                        <th>2003</th>
-                        <td rowspan="2">Rudolf Schuster</td>
-                        <td></td>
-
-                    </tr>
-                    <tr class="cr">
-                        <th>2003</th>
-                        <th>2004</th>
-                        <td rowspan="2">Václav Klaus</td>
-                        <td>
-
-                        </td>
-
-                    </tr>
-                    <tr class="cr">
-                        <th>2004</th>
-                        <th>2013</th>
-                        <td rowspan="2">Ivan Gašparovič</td>
-                        <td rowspan="2"></td>
-                    </tr>
-                    <tr class="cr">
-                        <th>2013</th>
-                        <th>2014</th>
-                        <td rowspan="3">Miloš Zeman</td>
-                    </tr>
-                    <tr class="cr">
-                        <th>2014</th>
-                        <th>2019</th>
-                        <td>Andrej Kiska</td>
-                        <td></td>
-
-                    </tr>
-                    <tr class="cr">
-                        <th>2019</th>
-                        <th>Dosud</th>
-                        <td>Zuzana Čaputová</td>
-                        <td></td>
-
-                    </tr>
-
-
-
-                </tbody>
+                <tr >
+                    <th>Adam</th>
+                    <th>Jonáš</th>
+                    <th>Linda</th>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>14</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>ano</td>
+                    <td>ne</td>
+                    <td>ne</td>
+                </tr>
             </table>
+
 
 
         </section>
@@ -355,17 +233,52 @@
             </ul>
 
         </section>
-        <section id="links">
-            <h2>Links</h2>
-
-        </section>
     </main>
     <footer>
         <span class="footer__name">Tadeáš Balda</span>
         <p class="footer__text">2022©</p>
 
     </footer>
-   
+    <script>
+        // Darkmode switch:
+        const toggleSwitch = document.querySelector('.darkmode__switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+        // Hamburger menu:
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navbar__menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".menu__item").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+        AOS.init();
+    </script>
+
 </body>
+
 
 </html>

@@ -18,7 +18,7 @@
     .navbar__menu {
         position: fixed;
         left: -100%;
-        top: 83px;
+        top: 65px;
         gap: 0;
         flex-direction: column;
         background-color: #262626;
@@ -40,6 +40,11 @@
 
     .navbar__menu.active {
         left: 0;
+    }
+    .background__text > h1 {  
+        color: white;
+        font-size: 2rem;
+        text-align: left;
     }
 
     /* Darmode */
