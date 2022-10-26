@@ -86,11 +86,11 @@ section h2 {
 }
 
 .menu__container {
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .menu {
-    min-height: 70px;
+   height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
