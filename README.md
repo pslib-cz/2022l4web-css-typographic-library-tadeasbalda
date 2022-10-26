@@ -1,5 +1,5 @@
 # Typography CSS library
-**Author:** *Tadeáš Balda*
+**Author:** [Tadeáš Balda](https://github.com/tadeasbalda)
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda/)** site for preview.
 ## Dependecies
