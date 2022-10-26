@@ -13,11 +13,8 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-ta
 8. [Sections](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Sections)
 9. [Buttons](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Buttons)
 9. [Alerts](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Alerts)
+9. [Tables](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Tables)
 
-
-
-
-...
 ## Implementation
 1) Download all files from the GitHub.
 2) Unzip 
@@ -75,3 +72,6 @@ There are 3 predefined alert classes:
 * ```class="alert alert--save"``` for save
 * ```class="alert alert--sign"``` for sign up
 * ```class="alert alert--critical"``` for warging
+## Tables
+
+You can use predefined table with standart ```<table>``` tag.
