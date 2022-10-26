@@ -10,7 +10,8 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-ta
 5. [Text](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Text)
 6. [Colors](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Colors)
 7. [Gallery](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Gallery)
-7. [Sections](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Sections)
+8. [Sections](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Sections)
+9. [Buttons](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Buttons)
 
 
 
@@ -58,3 +59,15 @@ A colour palette was created for this project. You can find these color in secti
 You can easily set up your own gallery using flexbox, which is great tool for responsive design.
 ## Sections
 Inside <body> create <main> tag where you put sections <section>. Every <section> should have <h>tag inside. Then do whatever you want.
+## Buttons
+```<button class="button">Your Text</button>```
+There are 3 predefined button classes:
+* ```class="button button--correct"``` for correct button
+* ```class="button button--wrong"``` for wrong button
+* ```class="button button--normal"``` for normal button
+## Alerts
+```<div class="alert alert--save">```
+There are 3 predefined alert classes:
+* ```class="alert alert--save"``` for save
+* ```class="alert alert--sign"``` for sign up
+* ```class="alert alert--critical"``` for warging
