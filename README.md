@@ -3,9 +3,9 @@
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda/)** site for preview.
 ## Parts of the documentation
-1. [Implementation](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda#Implementation)
-2. [Usage](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda#Usage)
-3. [I¨¨](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda#Implementation)
+1. [Implementation](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Implementation)
+2. [Usage](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Usage)
+3. [I¨¨](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Implementation)
 
 
 ...
