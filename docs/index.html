@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <body>
-    <header>    
+    <header>
         <div class="menu__container">
             <nav class="menu">
                 <a href="#" class="nav__logo"></a>
@@ -51,14 +51,14 @@
                 <h1>The first <span>Using</span> Flex</h1>
                 <p>This is the school project, so it is for free</p>
             </div>
-            <div   class="showmore">
+            <div class="showmore">
                 <a href="#showmore">Show more</a>
             </div>
         </div>
     </header>
-    <main id="showmore" data-aos-offset="200" data-aos="fade-up"  >
-        <section   id="buttons">
-            <h2   >Buttons</h2>
+    <main id="showmore" data-aos-offset="200" data-aos="fade-up">
+        <section id="buttons">
+            <h2>Buttons</h2>
             <div class="button__basic">
                 <button class="button button--correct">Correct</button>
                 <button class="button button--wrong">Wrong</button>
@@ -181,49 +181,138 @@
         </section>
         <section id="table">
             <h2>Table</h2>
-            <table class="table__example">
+            <table>
+                <caption>Seznam prezidentů ČR a SR od roku 1989</caption>
+                <colgroup>
+                    <col span="2" class="years">
+                    <col class="cr_head">
+                    <col class="sr_head">
+                    <col class="notes">
+                </colgroup>
                 <thead>
                     <tr>
-                        <th>
-                            bla
-                        </th>
-                        <th>
-                            dsfsdff
-                            blabla
-                        </th>
-                        <th>
-                            blablabla
-                        </th>
-                        <th>
-                            Tajd
-                        </th>
+                        <th>Od
 
+                        </th>
+                        <th>
+                            do
+                        </th>
+                        <th>
+                            Česko
+                        </th>
+                        <th>
+                            Slovensko
+                        </th>
+                        <th>
+                            Poznámka
+                        </th>
                     </tr>
 
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>
-                            example
-
-                        </th>
-
-
+                        <th colspan="2">Počet</th>
+                        <td>2+3</td>
+                        <td>2+5</td>
+                        <td></td>
                     </tr>
 
                 </tfoot>
-                <tbody>
+                <tbody class="komunismus">
                     <tr>
-                        <td>exmple</td>
-                        <td>ddds</td>
-                        <td>bas</td>
-                        <td>baa</td>
+                        <th>1975</th>
+                        <th>1989</th>
+                        <td colspan="2">Gustav Husák</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tbody class="csr">
+                    <tr>
+                        <th>
+                            1989
+                        </th>
+                        <th>
+                            1990
+                        </th>
+                        <td rowspan="2" colspan="2">
+                            Václav Havel
+                        </td>
+
+                        <td>
+                            Zvolen federálním schromážděním (s převahou poslanců KSČ)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>1990</th>
+                        <th>1992</th>
+                        <td>31.12. 1992 zaniká Česko-Slovenská Federativní Republika</td>
+                    </tr>
+                </tbody>
+
+
+
+                <tbody>
+                    <tr class="cr">
+                        <th>1993</th>
+                        <th>1998</th>
+                        <td rowspan="3">Václav Havel</td>
+                        <td>
+                            Michael Kováč
+                        </td>
+                        <td></td>
+                    <tr class="cr">
+                        <th>1998</th>
+                        <th>1999</th>
+                        <td>bez prezidenta</td>
+                        <td>Na Slovensku v této době byli pověřeni prezidentskými pravomocemi tehdejší premiéři</td>
+                    </tr>
+                    <tr class="cr">
+                        <th>1999</th>
+                        <th>2003</th>
+                        <td rowspan="2">Rudolf Schuster</td>
+                        <td></td>
 
                     </tr>
+                    <tr class="cr">
+                        <th>2003</th>
+                        <th>2004</th>
+                        <td rowspan="2">Václav Klaus</td>
+                        <td>
+
+                        </td>
+
+                    </tr>
+                    <tr class="cr">
+                        <th>2004</th>
+                        <th>2013</th>
+                        <td rowspan="2">Ivan Gašparovič</td>
+                        <td rowspan="2"></td>
+                    </tr>
+                    <tr class="cr">
+                        <th>2013</th>
+                        <th>2014</th>
+                        <td rowspan="3">Miloš Zeman</td>
+                    </tr>
+                    <tr class="cr">
+                        <th>2014</th>
+                        <th>2019</th>
+                        <td>Andrej Kiska</td>
+                        <td></td>
+
+                    </tr>
+                    <tr class="cr">
+                        <th>2019</th>
+                        <th>Dosud</th>
+                        <td>Zuzana Čaputová</td>
+                        <td></td>
+
+                    </tr>
+
 
 
                 </tbody>
             </table>
+
 
         </section>
         <section id="list">
