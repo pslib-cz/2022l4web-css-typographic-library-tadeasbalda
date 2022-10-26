@@ -8,47 +8,59 @@
     <link rel="stylesheet" href="./layout.css">
     <link rel="stylesheet" href="./typography.css">
     <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./mobile.css">
+
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar__title"><a href="#"></a></div>
-            <ul class="navbar__menu">
-                <li><a href="#headings" class="navbar__btn">Headings</a></li>
-                <li><a href="#text" class="navbar__btn">Text</a></li>
-                <li><a href="#list" class="navbar__btn">Lists</a></li>
-                <li><a href="#table" class="navbar__btn">Table</a></li>
-                <li><a href="#alerts" class="navbar__btn">Alerts</a></li>
-                <li><a href="#buttons" class="navbar__btn">Buttons</a></li>
-                <li><a href="#buttons" class="navbar__btn">Gallery</a></li>
-                <li><a href="#code" class="navbar__btn">Code</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-        <div class="dark__mode">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="button--darkmode round"></div>
-          </label>
-          <em>Enable Dark Mode!</em>
+        <div class="menu__container">
+            <nav class="menu">
+                <a href="#" class="nav__logo"></a>
+                <ul class="navbar__menu">
+                    <li class="menu__item"><a href="#headings" class="navbar__btn">Headings</a></li>
+                    <li class="menu__item"><a href="#text" class="navbar__btn">Text</a></li>
+                    <li class="menu__item"><a href="#list" class="navbar__btn">Lists</a></li>
+                    <li class="menu__item"><a href="#table" class="navbar__btn">Table</a></li>
+                    <li class="menu__item"><a href="#alerts" class="navbar__btn">Alerts</a></li>
+                    <li class="menu__item"><a href="#buttons" class="navbar__btn">Buttons</a></li>
+                    <li class="menu__item"><a href="#buttons" class="navbar__btn">Gallery</a></li>
+                    <li class="menu__item"><a href="#code" class="navbar__btn">Code</a></li>
+                    <li class="darkmode menu__item">
+                        <label class="darkmode__switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="button--darkmode round"></div>
+                        </label>
+                        <em class="darkmode__text">Enable Dark Mode!</em>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </div>
-        
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
 
         <div class="image__background">
             <div class="background__text">
-             <h1>The first <span>Using</span> Flex</h1>
-             <p>This is the school project, so it is for free</p>
-         </div>
-         </div>
+                <h1>The first <span>Using</span> Flex</h1>
+                <p>This is the school project, so it is for free</p>
+            </div>
+            <div class="showmore">
+                <p>Show more</p>
+            </div>
+        </div>
     </header>
     <main>
         <section id="buttons">
             <h2>Buttons</h2>
-            <div class="basic">
-                <button class="button--correct">Correct</button>
-                <button class="button--wrong">Wrong</button>
-                <button class="button--normal">Normal</button>
+            <div class="button__basic">
+                <button class="button button--correct">Correct</button>
+                <button class="button button--wrong">Wrong</button>
+                <button class="button button--normal">Normal</button>
             </div>
 
         </section>
@@ -86,18 +98,21 @@
 
         </section>
         <section id="alerts">
-            <div class="alert alert--save">
-                <span> </span>
-                <strong>Do something</strong> Save your work!
+            <h2>Alerts</h2>
+            <div class="alert__list">
+                <div class="alert alert--save">
+                    <span> </span>
+                    <strong>Do something</strong> Save your work!
 
-            </div>
-            <div class="alert alert--sign">
-                <span> </span>
-                <strong>Do something</strong> Please sign up!
-            </div>
-            <div class="alert alert--critical">
-                <span> </span>
-                <strong>Do something</strong> Warging!
+                </div>
+                <div class="alert alert--sign">
+                    <span> </span>
+                    <strong>Do something</strong> Please sign up!
+                </div>
+                <div class="alert alert--critical">
+                    <span> </span>
+                    <strong>Do something</strong> Warging!
+                </div>
             </div>
 
         </section>
@@ -105,44 +120,62 @@
             <h2>Images</h2>
             <h3>Single image</h3>
             <h3>Gallery</h3>
-            <div class="flexgallery">
-                <figure><a href=""><img src="./IMG/Group -1.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -2.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -3.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure> <a href=""><img src="./IMG/Group -4.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -5.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""></a><img src="./IMG/Group -6.png" alt="">
-                    <figcaption>Image Title</figcaption></a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -7.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group -8.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
-                <figure><a href=""><img src="./IMG/Group 1.png" alt="">
-                        <figcaption>Image Title</figcaption>
-                    </a>
-                </figure>
+            <div class="container">
+                <ul class="image-gallery">
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group -1.png" alt="">
+                            <figcaption class="overlay">Image title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group -2.png" alt="">
+                            <figcaption class="overlay">Image title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group -3.png" alt="">
+                            <figcaption class="overlay">Image title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group -4.png" alt="">
+                            <figcaption class="overlay">Image Title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./IMG/Group -5.png" alt="">
+                        <figcaption class="overlay">Image Title</figcaption>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group -6.png" alt="">
+                            <figcaption class="overlay">Image Title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./IMG/Group -7.png">
+                            <img src="./IMG/Group -7.png" alt="">
+                            <figcaption class="overlay">Image Title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group -8.png" alt="">
+                            <figcaption class="overlay">Image Title</figcaption>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./IMG/Group 1.png" alt="">
+                            <figcaption class="overlay">Image Title</figcaption>
+                        </a>
+                    </li>
+                </ul>
             </div>
-
         </section>
         <section id="table">
             <h2>Table</h2>
@@ -208,28 +241,42 @@
 
     </footer>
     <script>
-   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+        // Darkmode switch:
+        const toggleSwitch = document.querySelector('.darkmode__switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
 
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    }
-}
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
-    }    
-}
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+        // Hamburger menu:
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navbar__menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".menu__item").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
     </script>
 
 </body>
