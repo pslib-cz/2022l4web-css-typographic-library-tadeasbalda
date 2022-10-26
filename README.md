@@ -15,3 +15,5 @@ It's ideal solution when you need easy responsive layout. Especialy for one page
 ### Second
 ## Colors
 A colour palette was created for this project. You can find these color in section color palete. 
+## Photos
+
