@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./typography.css">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <body>
-    <header>
+    <header>    
         <div class="menu__container">
             <nav class="menu">
                 <a href="#" class="nav__logo"></a>
@@ -49,14 +51,14 @@
                 <h1>The first <span>Using</span> Flex</h1>
                 <p>This is the school project, so it is for free</p>
             </div>
-            <div class="showmore">
-                <p>Show more</p>
+            <div   class="showmore">
+                <a href="#showmore">Show more</a>
             </div>
         </div>
     </header>
-    <main>
-        <section id="buttons">
-            <h2>Buttons</h2>
+    <main id="showmore" data-aos-offset="200" data-aos="fade-up"  >
+        <section   id="buttons">
+            <h2   >Buttons</h2>
             <div class="button__basic">
                 <button class="button button--correct">Correct</button>
                 <button class="button button--wrong">Wrong</button>
@@ -258,8 +260,7 @@
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
-            }
-            else {
+            } else {
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
             }
@@ -278,6 +279,7 @@
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
         }))
+        AOS.init();
     </script>
 
 </body>

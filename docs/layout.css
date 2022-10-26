@@ -7,7 +7,7 @@
 :root {
     --primary-color: #302AE6;
     --secondary-color: #536390;
-    --font-color: #424242;
+    --font-color: black;
     --bg-color: rgb(255, 255, 255);
     --heading-color: #292922;
 }
@@ -16,7 +16,7 @@
 [data-theme="dark"] {
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
-    --font-color: #e1e1ff;
+    --font-color: white;
     --bg-color: #161625;
     --heading-color: #818cab;
 }
@@ -30,7 +30,7 @@ body {
 h1,
 h2 {
     font-family: 'Oswald', sans-serif;
-    color: var(--bg-color);
+    color: var(--font-color);
 }
 
 .showmore {
@@ -41,12 +41,16 @@ h2 {
     color: white;
     border-radius: 25px
 }
+
 .showmore:hover {
     background-color: white;
     color: black;
 }
-.showmore p {
+
+.showmore a {
     margin: 0;
+    text-decoration: none;
+    color: white;
 }
 
 /* titles */
@@ -115,6 +119,7 @@ section h2 {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: white;
+    border-radius: 1.5px;
 }
 
 .menu {
@@ -129,6 +134,7 @@ section h2 {
 .navbar__menu a:hover {
     color: yellow;
 }
+
 .navbar__menu a:hover::after {
     content: '';
     width: 25px;
@@ -452,4 +458,16 @@ button {
 
 .table__example {
     background-color: aqua;
+}
+
+/* Section */
+section {
+
+    display: flex;
+    justify-content: center;
+
+
+    max-width: 60rem;
+    margin-inline: 2rem;
+
 }
