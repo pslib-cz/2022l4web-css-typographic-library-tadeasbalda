@@ -33,10 +33,12 @@ h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--font-color);
 }
+
 h1 {
     color: white;
     font-size: 4rem;
 }
+
 .showmore {
     padding-block: .5rem;
     padding-inline: 2.5rem;
@@ -240,21 +242,23 @@ input:checked+.button--darkmode:before {
     justify-content: center;
     max-height: 1080px;
 
-background-size: 400% 400%;
-animation: gradient 10s ease infinite;
-height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
 }
 
 @keyframes gradient {
-0% {
-    background-position: 0% 50%;
-}
-50% {
-    background-position: 100% 50%;
-}
-100% {
-    background-position: 0% 50%;
-}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -267,6 +271,7 @@ height: 100vh;
 
 
 }
+
 .background__text p {
     text-align: initial;
 }
@@ -274,24 +279,27 @@ height: 100vh;
 
 
 h1 span {
-	background: linear-gradient(52deg, rgba(255, 99, 42, 1) 14%, rgba(255, 229, 19, 1) 69%);;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-	height: 100vh;
+    background: linear-gradient(52deg, rgba(255, 99, 42, 1) 14%, rgba(255, 229, 19, 1) 69%);
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* button */
