@@ -60,7 +60,9 @@ A colour palette was created for this project. You can find these color in secti
 ## Gallery
 You can easily set up your own gallery using flexbox, which is great tool for responsive design.
 ## Sections
-Inside <body> create <main> tag where you put sections <section>. Every <section> should have <h>tag inside. Then do whatever you want.
+Inside 
+ ```<body> ```
+ create  ```<main> ```tag where you put sections  ```<section> ```. Every ```<section> ``` should have ```<h> ```tag inside. 
 ## Buttons
 ```<button class="button">Your Text</button>```
 There are 3 predefined button classes:
