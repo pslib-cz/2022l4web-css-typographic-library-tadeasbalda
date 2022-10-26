@@ -10,6 +10,7 @@
     --font-color: black;
     --bg-color: rgb(255, 255, 255);
     --heading-color: #292922;
+    --bgra-color: linear-gradient(104deg, rgba(34, 193, 195, 1) 14%, rgb(174 144 251) 56%, rgba(253, 187, 45, 1) 100%);
 }
 
 /* Dark mode ON */
@@ -19,6 +20,7 @@
     --font-color: white;
     --bg-color: #161625;
     --heading-color: #818cab;
+    --bgra-color: linear-gradient(10deg, rgba(39, 113, 113, 1) 14%, rgba(66, 45, 121, 1) 56%, rgb(96 66 0) 100%);
 }
 
 body {
@@ -27,19 +29,24 @@ body {
     margin: 0
 }
 
-h1,
 h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--font-color);
 }
-
+h1 {
+    color: white;
+    font-size: 4rem;
+}
 .showmore {
     padding-block: .5rem;
     padding-inline: 2.5rem;
     border: 2px solid;
     border-color: white;
     color: white;
-    border-radius: 25px
+    border-radius: 25px;
+    margin: 0;
+    text-decoration: none;
+
 }
 
 .showmore:hover {
@@ -47,15 +54,20 @@ h2 {
     color: black;
 }
 
-.showmore a {
-    margin: 0;
-    text-decoration: none;
-    color: white;
-}
+
 
 /* titles */
 section h2 {
     text-align: center;
+}
+
+/* headings */
+.headings__example {
+    color: var(--font-color);
+}
+
+.headings__example--1 {
+    font-size: 2rem;
 }
 
 /* Navbar */
@@ -219,15 +231,33 @@ input:checked+.button--darkmode:before {
 .image__background {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(104deg, rgba(34,193,195,1) 14%, rgba(127,103,189,1) 56%, rgba(253,187,45,1) 100%);
+    background-image: var(--bgra-color);
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     justify-content: center;
+    max-height: 1080px;
 
+background-size: 400% 400%;
+animation: gradient 10s ease infinite;
+height: 100vh;
 }
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+
 
 .background__text {
     font-size: 1.4rem;
@@ -235,6 +265,33 @@ input:checked+.button--darkmode:before {
     color: white;
     padding: 2rem;
 
+
+}
+.background__text p {
+    text-align: initial;
+}
+
+
+
+h1 span {
+	background: linear-gradient(52deg, rgba(255, 99, 42, 1) 14%, rgba(255, 229, 19, 1) 69%);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* button */
@@ -377,7 +434,6 @@ button {
     transition: all 0.1s 0.1s ease-in-out;
     color: #fff;
     border-radius: 5px;
-    /* center overlay text */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -466,17 +522,23 @@ section {
     margin-inline: 2rem;
 
 }
+
 /* Table */
 table {
     background-color: black;
 }
+
 table {
     width: 100%;
-  }
-  table, tr, th, td {
+}
+
+table,
+tr,
+th,
+td {
     border: 1px solid gray;
     border-spacing: 0;
-  }
+}
 
 .komunismus {
     color: yellow;
@@ -491,15 +553,19 @@ table {
 .years {
     background-color: #D7CCC8;
 }
+
 .cr_head {
-    background-color:#90CAF9;
+    background-color: #90CAF9;
 }
+
 .sr_head {
     background-color: #F8BBD0;
 }
+
 .notes {
     background-color: white;
 }
-.cr:nth-of-type(2) > td:nth-of-type(1) {
+
+.cr:nth-of-type(2)>td:nth-of-type(1) {
     color: grey;
 }
