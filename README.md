@@ -9,13 +9,13 @@ Link to **[demo](https://github.com/pslib-cz/2022l4web-css-typographic-library-t
 2) Unzip 
 3) Connect all the files to your project
 Link layout.css 
-* ```<link href="./layout.css rel="stylesheet">```
+ ```<link href="./layout.css rel="stylesheet">```
 Link typography.css
-* ```<link href="./typography.css rel="stylesheet">```
+```<link href="./typography.css rel="stylesheet">```
 Link normalize.css
-* ```<link href="./normalize.css rel="stylesheet">```
+```<link href="./normalize.css rel="stylesheet">```
 Link mobile.css
-* ```<link href="./mobile.css rel="stylesheet">```
+```<link href="./mobile.css rel="stylesheet">```
 ## Usage
 It's ideal solution when you need easy responsive layout. Especialy for one page website.
 ## Components
