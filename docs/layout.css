@@ -555,9 +555,12 @@ table th {
 }
 /* footer */
 footer {
-    color: white;
+    
     background-color: black;
     text-align: center;
     padding: 2rem;
     margin-top: 1rem;
+}
+footer p, footer span {
+    color: white;
 }
