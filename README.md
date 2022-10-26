@@ -2,7 +2,8 @@
 **Author:** [Tadeáš Balda](https://github.com/tadeasbalda)
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda/)** site for preview.
-## Dependecies
+## Parts of the documentation
+1. [Implementation](https://pslib-cz.github.io/2022l4web-css-typographic-library-tadeasbalda#Implementation)
 ...
 ## Implementation
 1) Download all files from the GitHub.
@@ -16,9 +17,7 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-ta
 
 ## Usage
 It's ideal solution when you need easy responsive layout. Especialy for one page website.
-## Components
-### First
-### Second
+
 ## Colors
 A colour palette was created for this project. You can find these color in section color palete. 
 ## Photos
