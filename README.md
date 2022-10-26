@@ -7,12 +7,12 @@ Link to **[demo](https://github.com/pslib-cz/2022l4web-css-typographic-library-t
 ## Implementation
 1) Download all files from the GitHub.
 2) Unzip 
-3) Connect all the files to your project
-```<link href="./layout.css rel="stylesheet">```
-```<link href="./typography.css rel="stylesheet">```
-```<link href="./normalize.css rel="stylesheet">```
-```<link href="./mobile.css rel="stylesheet">```
-```<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>```
+3) Connect all  files to your project
+*```<link href="./layout.css rel="stylesheet">```
+*```<link href="./typography.css rel="stylesheet">```
+*```<link href="./normalize.css rel="stylesheet">```
+*```<link href="./mobile.css rel="stylesheet">```
+
 ## Usage
 It's ideal solution when you need easy responsive layout. Especialy for one page website.
 ## Components

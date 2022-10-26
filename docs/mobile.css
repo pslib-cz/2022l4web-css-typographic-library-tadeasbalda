@@ -46,9 +46,13 @@
         font-size: 2rem;
         text-align: left;
     }
+    section {
+        margin: 2rem;
+    }
 
     /* Darmode */
     .darkmode__text {
         display: none;
     }
+    
 }
