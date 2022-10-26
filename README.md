@@ -5,7 +5,10 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-ta
 ## Parts of the documentation
 1. [Implementation](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Implementation)
 2. [Usage](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Usage)
-3. [I¨¨](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Implementation)
+3. [Typography](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Typography)
+3. [Headings](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Headings)
+4. [Colors](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Colors)
+5. [Gallery](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Gallery)
 
 
 ...
@@ -21,7 +24,11 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-ta
 
 ## Usage
 It's ideal solution when you need easy responsive layout. Especialy for one page website.
-
+## Typography
+The main font is Source Sans Pro. For headings I used Oswald.
+## Headings
+You can easily set up your own gallery using flexbox, which is great tool for responsive design.
 ## Colors
 A colour palette was created for this project. You can find these color in section color palete. 
-## Photos
+## Gallery
+You can easily set up your own gallery using flexbox, which is great tool for responsive design.
