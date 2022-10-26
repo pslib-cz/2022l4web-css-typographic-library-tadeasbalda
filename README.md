@@ -12,8 +12,8 @@ Link to **[demo](https://pslib-cz.github.io/2022l4web-css-typographic-library-ta
 7. [Gallery](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Gallery)
 8. [Sections](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Sections)
 9. [Buttons](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Buttons)
-9. [Alerts](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Alerts)
-9. [Tables](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Tables)
+10. [Alerts](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Alerts)
+11. [Tables](https://github.com/pslib-cz/2022l4web-css-typographic-library-tadeasbalda#Tables)
 
 ## Implementation
 1) Download all files from the GitHub.
